@@ -1,4 +1,4 @@
-﻿Build started 11/16/2012 8:34:26 PM.
+﻿Build started 11/17/2012 11:30:38 AM.
      1>Project "C:\Users\Adam\Documents\GitHub\tutorial-game\game-tutorial\game-tutorial\game-tutorial.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\game-tutorial.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -6,10 +6,12 @@
          All outputs are up-to-date.
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\game-tutorial.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt "game-tutorial.cpp"
          game-tutorial.cpp
+     1>c:\users\adam\documents\github\tutorial-game\game-tutorial\game-tutorial\game-tutorial.cpp(22): warning C4101: 'num5' : unreferenced local variable
        ManifestResourceCompile:
          All outputs are up-to-date.
        Link:
          c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Adam\Documents\GitHub\tutorial-game\game-tutorial\Debug\game-tutorial.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\game-tutorial.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Adam\Documents\GitHub\tutorial-game\game-tutorial\Debug\game-tutorial.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Adam\Documents\GitHub\tutorial-game\game-tutorial\Debug\game-tutorial.lib" /MACHINE:X86 "Debug\game-tutorial.exe.embed.manifest.res"
+         Debug\Car.obj
          "Debug\game-tutorial.obj"
          Debug\stdafx.obj
        Manifest:
@@ -25,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.94
+Time Elapsed 00:00:01.86
