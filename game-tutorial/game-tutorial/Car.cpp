@@ -1,11 +1,12 @@
 #include "stdafx.h"
 #include "Car.h"
 
-int myPrice;
-int myKilometers;
-int myYear;
-
-Car::Car(){}
+Car::Car()
+{
+	myYear = 0;
+	myKilometers = 0;
+	myPrice = 0;
+}
 
 Car::Car(int year, int km, int price)
 {

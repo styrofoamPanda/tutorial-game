@@ -1,5 +1,4 @@
-
-#include "stdafx.h";
+#include "stdafx.h"
 
 class Car
 {
@@ -13,4 +12,8 @@ public:
 	void setKilometers(int km);
 	int getPrice();
 	void setPrice(int price);
+private:
+	int myPrice;
+	int myKilometers;
+	int myYear;
 };

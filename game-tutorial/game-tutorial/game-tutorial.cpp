@@ -14,13 +14,20 @@ int main(int argc, char* argv[])
 {
 	int num1;
 	int num4;
-	int num5;
 	char exit;
 	Handy handy;
-	Car mercury;
+	Car mercury(1984, 40000, 5500);
+	Car ford;
 
+	cout << mercury.getKilometers() << "\n";
 	mercury.setKilometers(15000);
-	mercury.getKilometers();
+	cout << mercury.getKilometers() << "\n";
+	cout << mercury.getYear() << "\n";
+	cout << mercury.getPrice() << "\n\n";
+
+	cout << ford.getKilometers() << "\n";
+	cout << ford.getYear() << "\n";
+	cout << ford.getPrice() << "\n\n";
 
 	cout << "Enter a number\n";
 	cin >> num1;
