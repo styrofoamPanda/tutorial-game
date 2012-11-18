@@ -27,7 +27,7 @@
     <ClInclude Include="Car.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="game-tutorial.h">
+    <ClInclude Include="Handy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -39,6 +39,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Car.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Handy.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
