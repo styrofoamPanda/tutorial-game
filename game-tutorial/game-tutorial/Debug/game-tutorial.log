@@ -1,15 +1,11 @@
-﻿Build started 11/17/2012 6:26:47 PM.
+﻿Build started 11/17/2012 6:42:03 PM.
      1>Project "C:\Users\Adam\Documents\GitHub\tutorial-game\game-tutorial\game-tutorial\game-tutorial.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
-         Creating "Debug\game-tutorial.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         Touching "Debug\game-tutorial.unsuccessfulbuild".
        ClCompile:
          All outputs are up-to-date.
-         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\game-tutorial.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Car.cpp Handy.cpp "game-tutorial.cpp"
-         game-tutorial.cpp
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\game-tutorial.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt Car.cpp
          Car.cpp
-         Generating Code...
-         Skipping... (no relevant changes detected)
-         Handy.cpp
        ManifestResourceCompile:
          All outputs are up-to-date.
        Link:
@@ -31,4 +27,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:03.17
+Time Elapsed 00:00:00.72

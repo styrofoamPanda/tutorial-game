@@ -8,8 +8,6 @@
 #include "Handy.h"
 #include "Car.h"
 
-using namespace std;
-
 int main(int argc, char* argv[])
 {
 	int num1;
@@ -19,28 +17,28 @@ int main(int argc, char* argv[])
 	Car mercury(1984, 40000, 5500);
 	Car ford;
 
-	cout << mercury.getKilometers() << "\n";
+	std::cout << mercury.getKilometers() << "\n";
 	mercury.setKilometers(15000);
-	cout << mercury.getKilometers() << "\n";
-	cout << mercury.getYear() << "\n";
-	cout << mercury.getPrice() << "\n\n";
+	std::cout << mercury.getKilometers() << "\n";
+	std::cout << mercury.getYear() << "\n";
+	std::cout << mercury.getPrice() << "\n\n";
 
-	cout << ford.getKilometers() << "\n";
-	cout << ford.getYear() << "\n";
-	cout << ford.getPrice() << "\n\n";
+	std::cout << ford.getKilometers() << "\n";
+	std::cout << ford.getYear() << "\n";
+	std::cout << ford.getPrice() << "\n\n";
 
-	cout << "Enter a number\n";
-	cin >> num1;
-	cout << "Enter an exponent\n";
-	cin >> num4;
+	std::cout << "Enter a number\n";
+	std::cin >> num1;
+	std::cout << "Enter an exponent\n";
+	std::cin >> num4;
 
 	handy.printTime();
-	cout << handy.powerIterative(num1, num4) << "\n";
+	std::cout << handy.powerIterative(num1, num4) << "\n";
 	handy.printTime();
-	cout << handy.power(num1, num4) << "\n";
+	std::cout << handy.power(num1, num4) << "\n";
 	handy.printTime();
 
-	cin >> exit;
+	std::cin >> exit;
 
 	return 0;
 }

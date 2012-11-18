@@ -3,8 +3,6 @@
 #include <iostream>
 #include "Windows.h"
 
-using namespace std;
-
 Handy::Handy()
 {
 }
@@ -109,5 +107,5 @@ void Handy::printTime()
 	SYSTEMTIME st;
 
 	GetSystemTime(&st);
-	cout << st.wMinute << "." << st.wSecond << "." << st.wMilliseconds << "\n" ;
+	std::cout << st.wMinute << "." << st.wSecond << "." << st.wMilliseconds << "\n" ;
 }
