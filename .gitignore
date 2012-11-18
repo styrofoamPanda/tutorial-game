@@ -2,3 +2,12 @@
 *.exe
 *.log
 *.tlog
+*.exe
+*.obj
+*.manifest
+*.pdb
+*.res
+*.pch
+*.rc
+*.idb
+*.lastbuildstate
