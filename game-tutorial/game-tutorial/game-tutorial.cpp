@@ -4,7 +4,6 @@
 #include "stdafx.h"
 #include <iostream>
 #include "Windows.h"
-#include "game-tutorial.h"
 #include "Handy.h"
 #include "Car.h"
 
