@@ -19,6 +19,15 @@ int main(int argc, char* argv[])
 	Handy handy;
 	Car mercury(1984, 40000, 5500);
 	Car ford;
+	Car cars[10];
+
+	for(int m = 0; m < 10; m++)
+	{
+		cars[m] = mercury;
+		cars[m].setKilometers(m * 1000);
+
+		std::cout << m << ": " << cars[m].getKilometers() << "\n";
+	}
 
 	gridPrint(10);
 	std::cout << "\n\n";

@@ -1,3 +1,4 @@
+#pragma once
 #ifndef HANDY_H
 #define HANDY_H
 class Handy
