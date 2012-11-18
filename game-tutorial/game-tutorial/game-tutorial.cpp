@@ -22,6 +22,9 @@ int main(int argc, char* argv[])
 	Car ford;
 
 	gridPrint(10);
+	std::cout << "\n\n";
+	gridPrint(5);
+	std::cout << "\n\n";
 
 	std::cout << mercury.getKilometers() << "\n";
 	mercury.setKilometers(15000);
