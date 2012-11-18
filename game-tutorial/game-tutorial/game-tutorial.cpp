@@ -3,7 +3,6 @@
 
 #include "stdafx.h"
 #include <iostream>
-#include "Windows.h"
 #include "Handy.h"
 #include "Car.h"
 
