@@ -1,4 +1,5 @@
-#pragma once
+#ifndef HANDY_H
+#define HANDY_H
 class Handy
 {
 public:
@@ -12,4 +13,5 @@ public:
 	int abs(int x);
 	void printTime();
 };
+#endif
 

@@ -1,3 +1,5 @@
+#ifndef CAR_H
+#define CAR_H
 #include "stdafx.h"
 
 class Car
@@ -17,3 +19,4 @@ private:
 	int myKilometers;
 	int myYear;
 };
+#endif

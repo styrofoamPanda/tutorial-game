@@ -7,7 +7,6 @@ Handy::Handy()
 {
 }
 
-
 Handy::~Handy()
 {
 }
