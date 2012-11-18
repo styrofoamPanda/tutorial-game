@@ -9,6 +9,7 @@
 #include "Car.h"
 
 void selector(int x);
+void gridPrint(int size);
 
 int main(int argc, char* argv[])
 {
@@ -19,6 +20,8 @@ int main(int argc, char* argv[])
 	Handy handy;
 	Car mercury(1984, 40000, 5500);
 	Car ford;
+
+	gridPrint(10);
 
 	std::cout << mercury.getKilometers() << "\n";
 	mercury.setKilometers(15000);
@@ -72,5 +75,17 @@ void selector(int x)
 		default:
 			std::cout << "Invalid selection!\n";
 			break;
+	}
+}
+
+void gridPrint(int size)
+{
+	for(int i = 0; i < size; i++)
+	{
+		for(int j = 0; j < size; j++)
+		{
+			std::cout << "0";
+		}
+		std::cout << "\n";
 	}
 }
