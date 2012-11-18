@@ -12,3 +12,7 @@
 *.idb
 *.lastbuildstate
 *.ilk
+*.sdf
+*.suo
+*.sln
+*.opensdf
