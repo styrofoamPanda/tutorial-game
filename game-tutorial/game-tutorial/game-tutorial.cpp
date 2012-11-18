@@ -23,21 +23,14 @@ int main(int argc, char* argv[])
 	mercury.getKilometers();
 
 	cout << "Enter a number\n";
-	
 	cin >> num1;
-
 	cout << "Enter an exponent\n";
-
 	cin >> num4;
 
 	handy.printTime();
-
 	cout << handy.powerIterative(num1, num4) << "\n";
-
 	handy.printTime();
-
 	cout << handy.power(num1, num4) << "\n";
-
 	handy.printTime();
 
 	cin >> exit;
