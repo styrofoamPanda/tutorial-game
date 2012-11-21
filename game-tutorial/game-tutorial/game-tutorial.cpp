@@ -11,10 +11,10 @@ void gridPrint(int size);
 
 int main(int argc, char* argv[])
 {
-	int num1;
+	char exit;
+	/*int num1;
 	int num4;
 	int num5;
-	char exit;
 	Handy handy;
 	Car mercury(1984, 40000, 5500);
 	Car ford;
@@ -57,6 +57,21 @@ int main(int argc, char* argv[])
 	handy.printTime();
 	std::cout << handy.power(num1, num4) << "\n";
 	handy.printTime();
+
+	std::cin >> exit;*/
+
+	unsigned short shortVar = 5;
+	unsigned long longVar = 65535;
+	long sVar = -65535;
+	long* pSVar = &sVar;
+
+	std::cout << "shortVar: " << shortVar << "\tAddress of shortVar:\t" << &shortVar << "\n"; 
+	std::cout << "longVar: " << longVar << "\tAddress of longVar:\t" << &longVar << "\n"; 
+	std::cout << "sVar: " << sVar << "\tAddress of sVar:\t" << &sVar << "\n"; 
+	std::cout << "pSVar: " << *pSVar << "\tAddress of pSVar:\t" << pSVar << "\n"; 
+
+	sVar = 420;
+	std::cout << "pSVar: " << *pSVar << "\tAddress of pSVar:\t" << pSVar << "\n"; 
 
 	std::cin >> exit;
 
