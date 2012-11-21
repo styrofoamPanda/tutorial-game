@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "Car.h"
+#include <iostream>
 
 Car::Car()
 {
@@ -13,9 +14,11 @@ Car::Car(int year, int km, int price)
 	myYear = year;
 	myKilometers = km;
 	myPrice = price;
+
+	std::cout << "Constructor called.\n";
 }
 
-Car::~Car(){}
+Car::~Car(){std::cout << "Destructor called.\n";}
 
 int Car::getYear()
 {

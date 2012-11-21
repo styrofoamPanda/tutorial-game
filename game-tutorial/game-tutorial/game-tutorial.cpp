@@ -65,6 +65,26 @@ int main(int argc, char* argv[])
 	long sVar = -65535;
 	long* pSVar = &sVar;
 
+	int *pHeap = new int;
+	if(pHeap == NULL)
+	{
+		std::cout << "Error! No memory for pHeap!!";
+		return 0;
+	}
+	*pHeap = 7;
+	std::cout << "pHeap: " << *pHeap << "\tAddress of pHeap:\t" << pHeap << "\n"; 
+	delete pHeap;
+
+	pHeap = new int;
+	if(pHeap == NULL)
+	{
+		std::cout << "Error! No memory for pHeap!!";
+		return 0;
+	}
+	*pHeap = 24;
+	std::cout << "pHeap: " << *pHeap << "\tAddress of pHeap:\t" << pHeap << "\n"; 
+	delete pHeap;
+
 	std::cout << "shortVar: " << shortVar << "\tAddress of shortVar:\t" << &shortVar << "\n"; 
 	std::cout << "longVar: " << longVar << "\tAddress of longVar:\t" << &longVar << "\n"; 
 	std::cout << "sVar: " << sVar << "\tAddress of sVar:\t" << &sVar << "\n"; 
@@ -72,6 +92,17 @@ int main(int argc, char* argv[])
 
 	sVar = 420;
 	std::cout << "pSVar: " << *pSVar << "\tAddress of pSVar:\t" << pSVar << "\n"; 
+	std::cout << "************************************************\n\n";
+
+	Car *Nissan = new Car(2005, 137000, 7500);
+
+	if(Nissan == NULL)
+	{
+		std::cout << "Error! No memory for pHeap!!";
+		return 0;
+	}
+
+	std::cout << Nissan->getYear();
 
 	std::cin >> exit;
 
