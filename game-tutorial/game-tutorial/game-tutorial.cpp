@@ -8,11 +8,114 @@
 
 void selector(int x);
 void gridPrint(int size);
+void doRandomStuff();
+int memoryFun();
 
 int main(int argc, char* argv[])
 {
+	if(memoryFun() == 0)
+	{
+		return 0;
+	}
+	doRandomStuff();
+
+	return 0;
+}
+
+void selector(int x)
+{
+	switch(x)
+	{
+		case 0: 
+			std::cout << "Welcome!\n";
+			break;
+		case 1: 
+			std::cout << "Fire in the Hole!\n";
+			break;
+		case 2:
+			std::cout << "Follow me!\n";
+			break;
+		case 3:
+			std::cout << "Fall back!\n";
+			break;
+		case 4:
+			std::cout << "Lead the way!\n";
+			break;
+		default:
+			std::cout << "Invalid selection!\n";
+			break;
+	}
+}
+
+void gridPrint(int size)
+{
+	for(int i = 0; i < size; i++)
+	{
+		for(int j = 0; j < size; j++)
+		{
+			std::cout << "0";
+		}
+		std::cout << "\n";
+	}
+}
+
+int memoryFun()
+{
 	char exit;
-	/*int num1;
+	unsigned short shortVar = 5;
+	unsigned long longVar = 65535;
+	long sVar = -65535;
+	long* pSVar = &sVar;
+
+	int *pHeap = new int;
+	if(pHeap == NULL)
+	{
+		std::cout << "Error! No memory for pHeap!!";
+		return 0;
+	}
+	*pHeap = 7;
+	std::cout << "pHeap: " << *pHeap << "\tAddress of pHeap:\t" << pHeap << "\n"; 
+	delete pHeap;
+
+	pHeap = new int;
+	if(pHeap == NULL)
+	{
+		std::cout << "Error! No memory for pHeap!!";
+		return 0;
+	}
+	*pHeap = 24;
+	std::cout << "pHeap: " << *pHeap << "\tAddress of pHeap:\t" << pHeap << "\n"; 
+	delete pHeap;
+
+	std::cout << "shortVar: " << shortVar << "\tAddress of shortVar:\t" << &shortVar << "\n"; 
+	std::cout << "longVar: " << longVar << "\tAddress of longVar:\t" << &longVar << "\n"; 
+	std::cout << "sVar: " << sVar << "\tAddress of sVar:\t" << &sVar << "\n"; 
+	std::cout << "pSVar: " << *pSVar << "\tAddress of pSVar:\t" << pSVar << "\n"; 
+
+	sVar = 420;
+	std::cout << "pSVar: " << *pSVar << "\tAddress of pSVar:\t" << pSVar << "\n"; 
+	std::cout << "************************************************\n\n";
+
+	Car *Nissan = new Car(2005, 137000, 7500);
+
+	if(Nissan == NULL)
+	{
+		std::cout << "Error! No memory for pHeap!!";
+		return 0;
+	}
+
+	std::cout << Nissan->getYear();
+	delete Nissan;
+
+	std::cin >> exit;
+
+	return 1;
+}
+
+void doRandomStuff()
+{
+	char exit;
+	int num1;
 	int num4;
 	int num5;
 	Handy handy;
@@ -58,90 +161,5 @@ int main(int argc, char* argv[])
 	std::cout << handy.power(num1, num4) << "\n";
 	handy.printTime();
 
-	std::cin >> exit;*/
-
-	unsigned short shortVar = 5;
-	unsigned long longVar = 65535;
-	long sVar = -65535;
-	long* pSVar = &sVar;
-
-	int *pHeap = new int;
-	if(pHeap == NULL)
-	{
-		std::cout << "Error! No memory for pHeap!!";
-		return 0;
-	}
-	*pHeap = 7;
-	std::cout << "pHeap: " << *pHeap << "\tAddress of pHeap:\t" << pHeap << "\n"; 
-	delete pHeap;
-
-	pHeap = new int;
-	if(pHeap == NULL)
-	{
-		std::cout << "Error! No memory for pHeap!!";
-		return 0;
-	}
-	*pHeap = 24;
-	std::cout << "pHeap: " << *pHeap << "\tAddress of pHeap:\t" << pHeap << "\n"; 
-	delete pHeap;
-
-	std::cout << "shortVar: " << shortVar << "\tAddress of shortVar:\t" << &shortVar << "\n"; 
-	std::cout << "longVar: " << longVar << "\tAddress of longVar:\t" << &longVar << "\n"; 
-	std::cout << "sVar: " << sVar << "\tAddress of sVar:\t" << &sVar << "\n"; 
-	std::cout << "pSVar: " << *pSVar << "\tAddress of pSVar:\t" << pSVar << "\n"; 
-
-	sVar = 420;
-	std::cout << "pSVar: " << *pSVar << "\tAddress of pSVar:\t" << pSVar << "\n"; 
-	std::cout << "************************************************\n\n";
-
-	Car *Nissan = new Car(2005, 137000, 7500);
-
-	if(Nissan == NULL)
-	{
-		std::cout << "Error! No memory for pHeap!!";
-		return 0;
-	}
-
-	std::cout << Nissan->getYear();
-
 	std::cin >> exit;
-
-	return 0;
-}
-
-void selector(int x)
-{
-	switch(x)
-	{
-		case 0: 
-			std::cout << "Welcome!\n";
-			break;
-		case 1: 
-			std::cout << "Fire in the Hole!\n";
-			break;
-		case 2:
-			std::cout << "Follow me!\n";
-			break;
-		case 3:
-			std::cout << "Fall back!\n";
-			break;
-		case 4:
-			std::cout << "Lead the way!\n";
-			break;
-		default:
-			std::cout << "Invalid selection!\n";
-			break;
-	}
-}
-
-void gridPrint(int size)
-{
-	for(int i = 0; i < size; i++)
-	{
-		for(int j = 0; j < size; j++)
-		{
-			std::cout << "0";
-		}
-		std::cout << "\n";
-	}
 }
